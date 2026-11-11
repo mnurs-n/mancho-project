@@ -5,7 +5,7 @@ interface ButtonProps {
     onToggle: () => void;
 }
 
-export default function Button({isDark, onToggle} : ButtonProps) {
+export default function Button({onToggle} : ButtonProps) {
     return (
     <button onClick={onToggle} className="button" type="button">
         <img src={darkMode} className="dark-mode-icon" alt="Toggle Theme" />

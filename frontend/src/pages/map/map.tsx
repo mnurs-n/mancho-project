@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import {useState} from 'react';
 import Button from './button.tsx';
 import './styles.css';
+import UserLocationMarker from './userLocationMarker.tsx';
 
 export default function Map() {
 
@@ -32,6 +33,7 @@ export default function Map() {
                 url={isDark ? darkMapUrl : lightMapUrl}
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
+                <UserLocationMarker />
         </MapContainer>
         </div>
     )
